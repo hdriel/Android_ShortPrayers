@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_bg_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/linearLayout1_bg_button">
+    	
+    	<LinearLayout 
+    	    android:layout_width="match_parent"
+	   		android:layout_height="match_parent"
+	   		android:orientation="horizontal"
+	   		android:layout_weight="1"
+    	    >
+	    	    <ZoomControls
+		            android:id="@+id/zoomControls1_button"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+	             	/>
+    	</LinearLayout>
+		<LinearLayout 
+    	    android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:orientation="horizontal"
+	   		android:layout_weight="1"
+    	    >
+	    	    
+	    	 <ToggleButton
+		        android:id="@+id/bgColor_button"
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:textOff="@string/bgColorBlack_button"
+		        android:textOn="@string/bgColorWhite_button" 
+		        android:layout_weight="1"/>
+
+	    	 <ToggleButton
+		        android:id="@+id/remmember_me_button"
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:textSize="10sp"
+		        android:textOff="@string/Remind_me"
+		        android:textOn="@string/Remind_me"
+		        android:layout_weight="1"/>
+	                 
+	    </LinearLayout>
+        
+    </LinearLayout>
+   
+    <TextView
+        android:id="@+id/title_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textDirection="anyRtl"
+        android:textSize="35sp"
+        android:text="@string/text_title_button1" />
+    
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:padding="6dp"
+	    >
+        
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout2_bg_button1"
+     >
+    
+    <TextView
+        android:id="@+id/contain_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textDirection="anyRtl"
+        android:textSize="12sp"
+        android:typeface="serif"
+        android:paddingRight="10dp"
+        android:textAlignment="center"
+        android:text="@string/text_contain_button1" />
+ 	</LinearLayout>
+ 
+ </ScrollView>
+    
+</LinearLayout>

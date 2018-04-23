@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hdriel.shortprayers.MainActivity" 
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft = "70dp"
+        android:textSize="24sp"
+        android:text="תפילות קצרות וסגולות" />
+
+    <ScrollView 
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        >
+        <LinearLayout 
+         android:layout_width="match_parent"
+    	 android:layout_height="match_parent"
+    	 android:orientation="vertical" 
+    	 android:layout_weight="2"   
+            >
+        <Button 
+            android:id="@+id/button_1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="13 עקרים "
+            />
+        <Button 
+            android:id="@+id/button_2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="10 הזכירות "
+            />
+        <Button 
+            android:id="@+id/button_3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ברכת תודה"
+            />
+        <Button 
+            android:id="@+id/button_4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ברכות התורה"
+            />
+        <Button 
+            android:id="@+id/button_5"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="תיקון הכללי"
+            />
+        <Button 
+            android:id="@+id/button_6"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="פרק שירה"
+            />
+        <Button 
+            android:id="@+id/button_7"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="תפילה לפני מבחן"
+            />
+        <Button 
+            android:id="@+id/button_8"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="תפילה להסרת מידת הכעס"
+            />
+        <Button 
+            android:id="@+id/button_9"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="מאמר לשלום בית"
+            />
+        <Button 
+            android:id="@+id/button_10"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="תפילת הגבר לשלום בית"
+            />
+         <Button 
+            android:id="@+id/button_11"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="תפילת האישה לשלום בית"
+            />
+          <Button 
+            android:id="@+id/button_12"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ברכה לשמירת הלשון"
+            />
+           <Button 
+            android:id="@+id/button_13"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="תפילה לקניית בית"
+            />
+        <Button 
+            android:id="@+id/button_to_setting"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#2a2a2a"
+            android:textColor="#ffffff"
+            android:text="הגדרות"
+            />
+
+        
+
+        </LinearLayout>
+        
+    </ScrollView>
+</LinearLayout>

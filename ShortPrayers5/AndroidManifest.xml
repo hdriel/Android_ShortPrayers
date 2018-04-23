@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hdriel.shortprayers"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+	
+    <uses-permission
+        android:name = "android.permission.RECEIVE_BOOT_COMPLETED"> 
+    </uses-permission>
+    
+    <uses-permission
+    	android:name = "android.permission.VIBRATE" >
+	</uses-permission>
+   
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/book_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="hdriel.shortprayers.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="hdriel.shortprayers.ContainerPrayerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="hdriel.shortprayers.ButtonSettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        <service android:name="service.ScheduleService" />
+        <service android:name="service.NotifyService" />
+        
+        <receiver
+		    android:name="service.BootReceiver"
+		    android:enabled="true"
+		    android:exported="true"
+		    android:label="BootReceiver">
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>
+    </application>
+
+</manifest>
